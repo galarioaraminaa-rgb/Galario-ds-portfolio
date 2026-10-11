@@ -21,6 +21,7 @@ project:
     - file: Galario_Lab_Activity.ipynb
     - file: >-
         Group_5FINAL_A_Machine_Learning_Approach_to_Predicting_Food_Delivery_Delays.ipynb
+    - file: Galario_WondersOfTheWorld_image_classification.ipynb
     
 site:
   template: book-theme
