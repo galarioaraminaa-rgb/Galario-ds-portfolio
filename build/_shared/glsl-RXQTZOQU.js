@@ -1,1 +1,1 @@
-import{a}from"/Galario-ds-portfolio/build/_shared/chunk-556CX22O.js";import"/Galario-ds-portfolio/build/_shared/chunk-W5F6WS2S.js";import"/Galario-ds-portfolio/build/_shared/chunk-RAQ24GF6.js";export default a();
+import{a}from"/myst_assets_folder/_shared/chunk-556CX22O.js";import"/myst_assets_folder/_shared/chunk-W5F6WS2S.js";import"/myst_assets_folder/_shared/chunk-RAQ24GF6.js";export default a();
