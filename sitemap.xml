@@ -29,9 +29,24 @@
     <loc>http://localhost:3000/galario-lab-activity</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/galario-wondersoftheworld-image-classification</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/group-5final-a-machine-learning-approach-to-predic</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/galario-wondersoftheworld-image-classification</loc>
+    <loc>http://localhost:3000/laboratory-task-2</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/laboratory-task-3</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/laboratory-task-4</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/laboratory-task-5</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/laboratory-task-6</loc>
   </url>
 </urlset>

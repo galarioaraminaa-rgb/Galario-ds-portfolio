@@ -1,1 +1,343 @@
-/* No Custom Stylesheet Provided */
+/* User Provided Stylesheet */
+
+/* 
+   Pastel Pink Theme for Jupyter Book 2 / MyST book-theme
+   Save this file beside myst.yml and configure:
+     site:
+       options:
+         style: ./custom.css
+*/
+
+:root {
+  color-scheme: light;
+  --pink-50: #fff7fa;
+  --pink-100: #ffedf3;
+  --pink-200: #fbd8e5;
+  --pink-300: #f4bfd3;
+  --pink-400: #e99ab9;
+  --pink-500: #d9789d;
+  --pink-700: #8b3e5d;
+  --ink: #45343d;
+  --muted-ink: #786570;
+  --surface: #ffffff;
+  --border: #f0d7e1;
+  --soft-shadow: 0 8px 24px rgba(139, 62, 93, 0.08);
+}
+
+/* Page canvas and default typography */
+html,
+body {
+  background: var(--pink-50);
+  color: var(--ink);
+}
+
+body {
+  line-height: 1.7;
+}
+
+main,
+article,
+article .article-container,
+.bd-content,
+.content {
+  color: var(--ink);
+}
+
+/* Top navigation */
+header,
+.navbar,
+.bd-header,
+.myst-top-nav {
+  background: rgba(255, 247, 250, 0.96) !important;
+  border-bottom: 1px solid var(--border) !important;
+  box-shadow: 0 2px 12px rgba(139, 62, 93, 0.04);
+}
+
+.navbar a,
+.bd-header a,
+header a {
+  color: var(--pink-700);
+}
+
+.navbar a:hover,
+.bd-header a:hover,
+header a:hover {
+  color: var(--pink-500);
+}
+
+/* Side navigation */
+.bd-sidebar-primary,
+.bd-sidebar-secondary,
+.sidebar,
+nav[aria-label*="Primary"],
+nav[aria-label*="primary"] {
+  background: var(--pink-50);
+}
+
+.bd-sidebar-primary,
+.bd-sidebar-secondary {
+  border-color: var(--border) !important;
+}
+
+.bd-sidebar-primary a,
+.bd-sidebar-secondary a,
+.sidebar a {
+  border-radius: 8px;
+  transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+.bd-sidebar-primary a:hover,
+.bd-sidebar-secondary a:hover,
+.sidebar a:hover {
+  background: var(--pink-100);
+  color: var(--pink-700);
+}
+
+.bd-sidebar-primary .active > a,
+.bd-sidebar-primary a[aria-current="page"],
+.sidebar .active > a {
+  background: var(--pink-200);
+  color: var(--pink-700);
+  font-weight: 650;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #713b53;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  padding-bottom: 0.35em;
+  border-bottom: 2px solid var(--pink-200);
+}
+
+h2 {
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid #f5e1e9;
+}
+
+/* Links */
+a {
+  color: #b34f79;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: #873956;
+}
+
+/* Content panels, figures, and common cards */
+article,
+.card,
+.sd-card,
+div.figure,
+figure,
+.output,
+.cell_output {
+  border-radius: 12px;
+}
+
+.card,
+.sd-card {
+  border: 1px solid var(--border) !important;
+  box-shadow: var(--soft-shadow);
+}
+
+figure,
+div.figure {
+  background: #fffafd;
+  padding: 0.5rem;
+}
+
+figcaption,
+.caption {
+  color: var(--muted-ink);
+  font-size: 0.92rem;
+}
+
+/* Tables */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+thead th {
+  background: var(--pink-100);
+  color: #713b53;
+  border-bottom: 1px solid var(--pink-200);
+}
+
+th,
+td {
+  padding: 0.65rem 0.85rem;
+  border-color: #f3e2e9;
+}
+
+tbody tr:nth-child(even) {
+  background: #fff8fb;
+}
+
+tbody tr:hover {
+  background: #ffedf4;
+}
+
+/* Code blocks and inline code */
+pre,
+div.highlight,
+.cell .highlight {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff9fc !important;
+  box-shadow: inset 3px 0 0 var(--pink-300);
+}
+
+pre {
+  padding: 1rem;
+}
+
+code,
+tt {
+  color: #914663;
+}
+
+:not(pre) > code {
+  background: var(--pink-100);
+  border: 1px solid #f7dce7;
+  border-radius: 5px;
+  padding: 0.12em 0.35em;
+}
+
+/* Notebook cells and outputs */
+.jp-Cell,
+.cell {
+  margin-bottom: 1.1rem;
+}
+
+.jp-InputArea,
+div.input_area {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff9fc;
+}
+
+.jp-OutputArea,
+div.output_area {
+  border-radius: 0 0 10px 10px;
+}
+
+.jp-OutputArea-output,
+.output_subarea {
+  border-radius: 8px;
+}
+
+/* Notes, warnings, tips, and other admonitions */
+.admonition,
+div[class^="admonition-"],
+.alert,
+aside {
+  border-radius: 10px;
+  border-color: var(--pink-300);
+  box-shadow: 0 3px 12px rgba(139, 62, 93, 0.04);
+}
+
+.admonition,
+.alert {
+  background: #fff8fb;
+}
+
+.admonition-title,
+.admonition > .admonition-title,
+.alert-heading {
+  background: var(--pink-100);
+  color: #713b53;
+}
+
+/* Buttons and interactive controls */
+button,
+.btn,
+input[type="button"],
+input[type="submit"] {
+  border-radius: 8px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-primary,
+button.primary {
+  background: var(--pink-500);
+  border-color: var(--pink-500);
+  color: #fff;
+}
+
+.btn-primary:hover,
+button.primary:hover {
+  background: var(--pink-700);
+  border-color: var(--pink-700);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(139, 62, 93, 0.18);
+  transform: translateY(-1px);
+}
+
+input,
+select,
+textarea {
+  border-color: var(--pink-300);
+  border-radius: 7px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--pink-500);
+  outline: 2px solid rgba(217, 120, 157, 0.2);
+  outline-offset: 1px;
+}
+
+/* Search */
+input[type="search"],
+.bd-search input,
+.search-button-field {
+  border-color: var(--pink-200);
+  background: #fffafd;
+}
+
+/* Footer */
+footer,
+.bd-footer,
+.myst-footer {
+  border-top: 1px solid var(--border);
+  background: #fff2f7;
+  color: var(--muted-ink);
+}
+
+/* Scrollbars where supported */
+* {
+  scrollbar-color: var(--pink-300) var(--pink-50);
+}
+
+/* Accessibility: retain visible keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--pink-500);
+  outline-offset: 3px;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
